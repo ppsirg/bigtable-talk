@@ -24,10 +24,10 @@ Agenda
 - Project Overview
 - Why Bigtable?
 - Design & Planning
-- Implementation Experience
-- Lessons Learned
-- Conclusion
-- Q&A
+- Infrastructure & Scalability
+- Schemas re-design
+- Software Integration
+- Maintainance planning
 
 ----
 
@@ -92,7 +92,7 @@ Infrastructure & Scalability
 **To figure out:**
 
 - Cluster: when, how many
-- Nodes: max/min, rescale criteria
+- Nodes: type, max/min, rescale criteria
 - Data management policies
 - IAM roles and permissions
 
@@ -173,13 +173,22 @@ Schemas re-design
 Software Integration
 =============================
 
-**Adapting Existing Services:**
-
-- New db driver
-- Support Sync / Async
+**New database driver:**
 
 .. image:: ./img/adapt_design.webp
     :width: 400px
+
+----
+
+Software Integration
+=============================
+
+**Support Sync / Async**
+
+Bigtable full potential is async
+
+.. image:: ./img/python_async.webp
+    :width: 650px
 
 ----
 
@@ -198,13 +207,33 @@ Software Integration
 Maintainance planning
 =============================
 
-- Backups
-  - Autobackup(*)
-  - Custom Legacy Backup
-- Monitoring (service-side)
+**Monitoring (service-side)**
 
 .. image:: ./img/backup.webp
     :width: 400px
+
+----
+
+Maintainance planning
+=============================
+
+**Legacy Backups**
+
+.. csvtable::
+    :header: "Advantage", "Disadvantage"
+
+    "Lots of documentation", "Rely on external solution"
+    "Flexible", "Expensive (more code & bandwidth)"
+    "Full support", " "
+
+**Autobackup**
+
+.. csvtable::
+    :header: "Advantage", "Disadvantage"
+
+    "Native & optimized", "New feature"
+    "No API support (only console + gui)", "backup policies"
+
 
 ----
 
