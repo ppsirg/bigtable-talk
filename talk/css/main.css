@@ -1,0 +1,63 @@
+body {
+    color: #333333;
+    font-size: larger;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #2C6EBB;
+}
+
+.footer {
+    color: #4089F5;
+}
+
+pre.code {
+    border: 2px solid #4089F5;
+    border-radius: 15px;
+    padding: 20px 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #333333;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+/* Header styling */
+thead th {
+    background-color: #2C6EBB;
+    color: #FFFFFF;
+    font-size: 1.1em;
+}
+
+/* Body styling */
+tbody td {
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+/* Accent row styling */
+tbody tr:nth-child(odd) {
+    background-color: #D3D3D3;
+}
+
+/* Highlight specific rows for emphasis */
+tbody tr:hover {
+    background-color: #FFDB58;
+    color: #333333;
+    cursor: pointer;
+}
+
+/* Footer styling, if applicable */
+tfoot td {
+    background-color: #4089F5;
+    color: #FFFFFF;
+    font-weight: bold;
+}
