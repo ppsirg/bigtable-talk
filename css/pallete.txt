@@ -1,0 +1,15 @@
+Base Color
+
+    Primary Blue: #4089F5
+
+Complementary Colors
+
+    Dark Blue: #2C6EBB (darker shade of the primary blue for headings and emphasis)
+    Light Blue: #A6C8FF (lighter shade of the primary blue for backgrounds and highlights)
+
+Accent Colors
+
+    Mustard Yellow: #FFDB58 (to highlight key points and draw attention)
+    White: #FFFFFF (for text and clean backgrounds)
+    Dark Gray: #333333 (for text, borders, and secondary elements)
+    Light Gray: #D3D3D3 (for subtle backgrounds and dividers)
