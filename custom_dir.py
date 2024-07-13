@@ -74,6 +74,6 @@ if __name__ == "__main__":
     if args.action == 'run':
         cmd = ['--skip-help', '-p', '5555', 'bigtable_talk.rst']
     else:
-        cmd = ['--skip-help', '-p', '5555', 'bigtable_talk.rst', 'talk']
+        cmd = ['--skip-help', '-p', '5555', 'bigtable_talk.rst', 'docs']
     hovercraft.main(cmd)
 
